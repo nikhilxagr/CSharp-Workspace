@@ -29,15 +29,39 @@ x86/
 # MSBuild
 *.log
 *.tlog
+*.binlog
 
 # NuGet
 *.nupkg
 *.snupkg
 packages/
 .nuget/
+project.lock.json
+project.fragment.lock.json
 
 # Dotnet tools
 .dotnet/
+*.dll
+*.exe
+*.pdb
+*.mdb
+
+# Assemblies & compiled output
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp_proj
+*_wpftmp.csproj
 
 # Test results
 TestResults/
@@ -48,6 +72,12 @@ TestResults/
 # ASP.NET Core
 appsettings.Development.json
 appsettings.Local.json
+appsettings.*.json
+
+# Config files
+*.config
+!App.config
+launchSettings.json
 
 # IIS / Express
 .vs/config/
@@ -60,12 +90,14 @@ wwwroot/
 # OS files
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Backup & temp
 *.bak
 *.tmp
 *.temp
 *.swp
+*~
 
 # Logs
 logs/
@@ -74,3 +106,10 @@ logs/
 # Certificates
 *.pfx
 *.cer
+
+# StyleCop
+StyleCopReport.xml
+
+# Generated files
+*.designer.cs
+*.Designer.cs
